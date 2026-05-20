@@ -2,7 +2,7 @@
 
 
 ## Setup steps
-- clone the project: `git clone https://github.com/abiswas2293/shady-meadows-test-suite.git`
+- Clone the project: `git clone https://github.com/abiswas2293/shady-meadows-test-suite.git`
 - Your runtime environment must have following to ensure smooth running for tests
     -   Java 11+
     -   Maven
@@ -14,7 +14,7 @@
 
 -  Please run the tests only when the website is UP and Running
 
--  Question 2: UI Automation (Playwright) - As per the requirement there is no form "Contact". So I have automated "Send Us a Message" form instead which contains fields "Name", "Email", "Phone", "Subject", "Message"
+-  Question 2: UI Automation (Playwright) - As per the application design, there is no form explicitly named “Contact”. Therefore, the “Send Us a Message” form has been automated instead, which includes the fields: Name, Email, Phone, Subject, and Message.
 
 
 
@@ -59,7 +59,7 @@
 
 ## 4. Run the project
 
-### Please run the project on Windows Powershell or Linux/MacOS default terminal only (Not on Git bash please)
+### <u>*Please run the project on Windows Powershell or Linux/MacOS default terminal only (Not on Git bash please)*</u>
 
 ## For API testing using Karate DSL
 - Run API Test
@@ -113,7 +113,7 @@
 
 
 
-## BUGS
+## 6. BUGS
 
 ### Server Downtime
 - The application environment appears to be unstable at times, with occasional service outages. During these periods, both API and UI tests may fail due to host unavailability rather than application defects.

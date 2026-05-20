@@ -12,9 +12,9 @@
 
 ## Consideration : 
 
-##### Please run the tests only when the website is UP and Running
+-  Please run the tests only when the website is UP and Running
 
-##### Question 2: UI Automation (Playwright) - As per the requirement there is no form "Contact". So I have automated "Send Us a Message" form instead which contains fields "Name", "Email", "Phone", "Subject", "Message"
+-  Question 2: UI Automation (Playwright) - As per the requirement there is no form "Contact". So I have automated "Send Us a Message" form instead which contains fields "Name", "Email", "Phone", "Subject", "Message"
 
 
 

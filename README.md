@@ -59,7 +59,12 @@
 
 ## 4. Run the project
 
-### <u>*Please run the project on Windows Powershell or Linux/MacOS default terminal only (Not on Git bash please)*</u>
+### Important
+
+- Please run the project using:
+    - Windows PowerShell
+    - Linux/MacOS default terminal
+    - Do NOT use Git Bash, as it may cause command execution issues.
 
 ## For API testing using Karate DSL
 - Run API Test

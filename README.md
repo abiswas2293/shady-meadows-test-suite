@@ -9,9 +9,15 @@
     -   Nodejs 20+
 
 
-## Consideration : Please run the tests only when the website is UP and Running
+
+## Consideration : 
+
+##### Please run the tests only when the website is UP and Running
 
 ##### Question 2: UI Automation (Playwright) - As per the requirement there is no form "Contact". So I have automated "Send Us a Message" form instead which contains fields "Name", "Email", "Phone", "Subject", "Message"
+
+
+
 
 ## 1. Project Structure and approach
 - Project Structure:
@@ -32,6 +38,7 @@
 - Tests were designed to be atomic due to periodic data resets. eg. For the Booking Creation `POST /booking/` scenario, no hard-coded roomid or static dates are used. Instead, a dedicated features/setup module was created to handle test data preparation. This setup flow generates an admin token `POST /auth/login`, creates a new room `POST /room`, and retrieves the latest roomid from the `GET /room` endpoint. As a result, each execution creates a fresh room and performs the booking against it, ensuring test independence and reliability.
 
 
+
 ## 3. UI Testing (Playwright)
 - UI tests are present in folder: `ui-tests\tests`
 - Page Object Model Approach
@@ -47,6 +54,7 @@
 - Homepage sanity checks (Contact form, room listings, booking buttons)
 - Admin login and dashboard validation
 - Relied on Playwright auto-waiting for stability in async UI rendering
+
 
 
 ## 4. Run the project
@@ -88,6 +96,9 @@
 
 ![alt text](playwright-report-success.png)
 
+
+
+
 ## 5. CI/CD integration explanation:
 - Checkout source code
 - Install dependencies (Java, Maven, Nodejs)
@@ -98,6 +109,8 @@
 - Publish reports from both jobs (attached to the build):
     - `api-tests/target/karate-reports/`
     - `ui-tests/playwright-report/`
+
+
 
 
 ## BUGS

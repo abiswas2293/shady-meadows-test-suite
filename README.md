@@ -35,7 +35,7 @@
 - Automated key microservices: /branding, /room, /booking
 - Validated response structure using strict matchers (types, regex, numeric checks)
 - Used dynamic data handling (e.g., room IDs) to ensure tests remain environment-independent
-- Tests were designed to be atomic due to periodic data resets. eg. For the Booking Creation `POST /booking/` scenario, no hard-coded roomid or static dates are used. Instead, a dedicated features/setup module was created to handle test data preparation. This setup flow generates an admin token `POST /auth/login`, creates a new room `POST /room`, and retrieves the latest roomid from the `GET /room` endpoint. As a result, each execution creates a fresh room and performs the booking against it, ensuring test independence and reliability.
+- Tests were designed to be atomic due to periodic data resets. eg. For the Booking Creation `POST /booking/` scenario, no hard-coded roomid or static dates are used. Instead, a dedicated `features/setup` module was created to handle test data preparation. This setup flow generates an admin token `POST /auth/login`, creates a new room `POST /room`, and retrieves the latest roomid from the `GET /room` endpoint. As a result, each execution creates a fresh room and performs the booking against it, ensuring test independence and reliability.
 
 
 

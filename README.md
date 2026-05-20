@@ -61,6 +61,10 @@
     - macOS: `open api-tests/target/karate-reports/karate-summary.html`
     - Windows: `start api-tests/target/karate-reports/karate-summary.html`   
 
+- Sample Karate API test report :
+
+![alt text](karate-report-success.png)
+
 
 
 ## For UI testing using Playwright TS
@@ -80,7 +84,9 @@
 - View the Playwright report:
     - MacOS/Windows powershell: `npx --prefix ui-tests playwright show-report ui-tests/playwright-report`
 
+- Sample Playwright test report :
 
+![alt text](playwright-report-success.png)
 
 ## 5. CI/CD integration explanation:
 - Checkout source code

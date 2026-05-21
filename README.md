@@ -108,9 +108,11 @@
 - Checkout source code
 - Install dependencies (Java, Maven, Nodejs)
 - You can also have API and UI automation as separate pipeline jobs or stages.
-- I will consider, we have 2 separate pipeline(Smoke, Regression) both running API and UI Tests together in separate stages
-    - Pipeline 1 (Smoke): To trigger the tests when a Pull Request is triggered. It will trigger Stage 1 for API tests, if API test fails   only then run Stage 2 for UI tests. This will save time for execution and give results faster. The PR can only be approved when the BUILD is successful.
-    - Pipeline 2 (Regression): This can be triggered on scheduled basis (nightly, daily). And we can have 2 separate stages same as above but if Stage 1 fails (API execution), still Stage 2 will be triggered to get complete execution results. The execution report can be attached and send to a recipient via email.
+- I would suggest having two separate pipelines (Smoke and Regression), with both API and UI tests running in separate stages.
+    - Pipeline 1 (Smoke):
+        Triggered when a Pull Request is created. Stage 1 will execute the API tests, and only if the API tests pass will            Stage 2 execute the UI tests. This approach helps save execution time and provides faster feedback. The Pull Request         can only be approved if the build is successful.
+    - Pipeline 2 (Regression):
+        Triggered on a scheduled basis (nightly or daily). Similar to the Smoke pipeline, it will have two separate stages.          However, even if Stage 1 (API execution) fails, Stage 2 (UI execution) will still run to provide complete execution          results. The execution report can then be attached and sent to recipients via email.
 - Publish reports from both jobs (attached to the build):
     - `api-tests/target/karate-reports/`
     - `ui-tests/playwright-report/`

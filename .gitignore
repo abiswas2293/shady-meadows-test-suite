@@ -1,2 +1,23 @@
 # IntelliJ IDEA configuration directory
 .idea/
+
+# VS Code
+.vscode/
+
+# Karate reports and generated files
+/api-tests/target/
+/api-tests/target/generated-test-sources/
+/api-tests/target/karate-reports/
+/api-tests/target/surefire-reports/
+/api-tests/target/test-classes/
+
+# Playwright test artifacts
+/ui-tests/node_modules/
+/ui-tests/playwright-report/
+/ui-tests/test-results/
+/ui-tests/.npm/
+/ui-tests/.package-lock.json
+
+
+# Temporary files
+*.tmp
